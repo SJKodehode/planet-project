@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 4rem;
+    
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+    }
+    ul {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+        padding: 2rem 0;
+        text-decoration-line: none;
+    }
+}
+body {
+    font-family: MuseoModerno, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #000000;
+    color: #ffffff;
+}
+main {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.section-saturn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    h2 {
+        font-size: 4rem;
+        color: #ffffff;
+    }
+    p {
+        font-size: 1rem;
+        color: #ffffff;
+        margin-top: -4rem;
+    }
+}
+.section-rings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.section-moons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.rings-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+    
+   
+}
+.text-center {
+    text-align: center;
+    padding-bottom: 8rem;
+    margin-top: -8rem;
+}
+.moons-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.saturn-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: -8rem;
+}
+.p-size {
+    font-size: 1rem;
+}
+nav {
+    padding-right: 2rem;
+}

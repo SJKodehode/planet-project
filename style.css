@@ -3,10 +3,12 @@
     margin: 0;
     padding: 0;
 }
-h2 {
-    font-size: 4rem;
-    
+
+:root {
+    --font-museo-moderno: MuseoModerno;
 }
+
+/* HEADER CONTENT */
 header {
     display: flex;
     justify-content: center;
@@ -14,35 +16,51 @@ header {
     flex-direction: column;
     position: sticky;
     top: 0;
-    a {
-        list-style: none;
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 20px;
-    }
-    ul {
-        flex-direction: row;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        list-style: none;
-        padding: 2rem 0;
-        text-decoration-line: none;
-    }
 }
+nav {
+    margin-right: 2rem;
+}
+ul {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 2rem 0;
+    text-decoration-line: none;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/* END HEADER CONTENT */
+
+/* /////////////////////////////////////////////////// */
+
+/* MAIN CONTENT */
+
 body {
-    font-family: MuseoModerno, sans-serif;
+    font-family: var(--font-museo-moderno), sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background-color: #000000;
     color: #ffffff;
-    background-image: url('https://images.unsplash.com/photo-1628498188873-579210ce622e?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
 }
 main {
     width: 60vw;
     margin: 0 auto;
+}
+h2 {
+    font-size: 4rem;
+    color: #ffffff;
+}
+p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: -4rem;
 }
 
 .section-saturn {
@@ -50,29 +68,18 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    h2 {
-        font-size: 4rem;
-        color: #ffffff;
-    }
-    p {
-        font-size: 1rem;
-        color: #ffffff;
-        margin-top: -4rem;
-    }
 }
 .section-rings {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
 .section-moons {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
 }
 .rings-content {
     display: flex;
@@ -80,8 +87,6 @@ main {
     align-items: center;
     flex-direction: row;
     gap: 4rem;
-    
-   
 }
 .text-center {
     text-align: center;
@@ -106,6 +111,7 @@ main {
 .p-size {
     font-size: 1rem;
 }
-nav {
-    padding-right: 2rem;
+.footer-section {
+    text-align: center;
+    margin: 1rem 0;
 }
